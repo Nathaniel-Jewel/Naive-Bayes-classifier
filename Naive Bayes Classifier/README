@@ -1,0 +1,21 @@
+Project Desciption:
+
+Use the feature vectors to train a Naive Bayes classifier to automatically label unseen reviews as positive or negative.
+
+1. Write a program that trains a Naive Bayes model using the features you extracted in the previous part of the assignment by:
+
+(a) Creating the training instances from the features you created previously. This is a list of tuples. The first element of the tuple is the feature vector of the document (i.e., the dictionary of fea- ture/value pairs). The second element is the name of the category (i.e., positive or negative). There should be one feature set for word features and another for word pos features.
+(b) Train two Naive Bayes classifiers with the training instances created in the previous step:
+classifier = nltk.classify.NaiveBayesClassifier.train(train)
+(c) Save the word features classifier (as restaurant-word features-model-P1.pickle) and the word pos features classifier (as restaurant-word pos features-model-P1.pickle) to disk using the following code snip-
+pet.
+(d) Use the show most informative features method to find the most informative features in each case and write the results to a file named FEATURE SET-DATASET-informative-features.txt.
+
+
+2. Write a program restaurant-competition-P1.py that classifies reviews using your trained models. It should take three arguments:
+
+(a) The first should be the trained classifier model (one of restaurant-word features-model-P1.pickle or restaurant-word pos features-model-P1.pickle).
+(b) The second should be the file with the reviews in it to be classified.
+(c) The third should be the output file to write the classification results. Each predicted label should be on a separate line in the output in the same order as the input file. This file should be the output of a function called evaluate and you should turn it in. The evaluate function should also calculate the accuracy and confusion matrix.
+
+
