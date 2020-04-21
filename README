@@ -2,7 +2,7 @@ Project Desciption:
 
 Use the feature vectors to train a Naive Bayes classifier to automatically label unseen reviews as positive or negative.
 
-1. Write a program that trains a Naive Bayes model using the features you extracted in the previous part of the assignment by:
+1. Write a program that trains a Naive Bayes model using the features by:
 
 (a) Creating the training instances from the features you created previously. This is a list of tuples. The first element of the tuple is the feature vector of the document (i.e., the dictionary of fea- ture/value pairs). The second element is the name of the category (i.e., positive or negative). There should be one feature set for word features and another for word pos features.
 (b) Train two Naive Bayes classifiers with the training instances created in the previous step:
